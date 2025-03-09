@@ -7,7 +7,10 @@ def solution(queue1, queue2):
     sum2 = sum(queue2)
     lenth = len(queue1)
     total = sum1 + sum2
-    middle = total//2 #짜피 합은 다 짝수임
+    #합이 홀수가 되면 중간값이 되도록 만들 수 없음. 정수의 합이니까.
+    if total % 2 == 0:
+        middle = total//2
+    else: return -1
     
     for _ in range(lenth*3):
         if (sum1 > middle):
