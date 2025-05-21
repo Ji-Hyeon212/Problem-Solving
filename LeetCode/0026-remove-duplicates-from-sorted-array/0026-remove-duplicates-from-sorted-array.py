@@ -6,6 +6,6 @@ class Solution:
         for j in range(1,len(nums)):
             if nums[i]!=nums[j]: # If not duplicated
                 i+=1  # Move i
-                nums[i]=nums[j] # Swap
+                nums[i]=nums[j] # Overwrite
         
         return i+1
