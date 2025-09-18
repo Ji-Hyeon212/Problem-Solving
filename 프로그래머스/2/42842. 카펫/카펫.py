@@ -1,7 +1,6 @@
 def solution(brown, yellow):
     total = brown + yellow
-    # 가로 또는 세로는 total의 root 값보다 크다.
-    # int(root) + 1 을 하면 최대 가로 또는 세로 크기
+    # 가로 또는 세로는 total의 root 값까지 계산
     for height in range(1, int(total ** 0.5) + 1):
         if (total%height == 0):
             width = total // height
