@@ -1,0 +1,16 @@
+def solution(board, h, w):
+    n = len(board)
+    # len_h = len(board)
+    # len_w = len(board[0])
+    count = 0
+    
+    dh = [0, 1, -1, 0]
+    dw = [1, 0, 0, -1]
+    
+    for i in range(4):
+        h_check = h + dh[i]
+        w_check = w + dw[i]
+        if (h_check < n and h_check >= 0 and w_check < n and w_check >= 0):
+            if (board[h][w] == board[h_check][w_check]):
+                count += 1
+    return count
