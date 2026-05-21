@@ -1,13 +1,18 @@
 def solution(participant, completion):
-    answer = ''
-    dict_part = {}
-    
-    for i in participant:
-        if i in dict_part: dict_part[i]+=1
-        else: dict_part[i]=1
-    for j in completion:
-        if j in dict_part:
-            dict_part[j]-=1
-    answer = [i for i in dict_part if dict_part[i]==1][0]      
-        
-    return answer
+    hash_map = {}
+
+    # 참가자 수 세기
+    for name in participant:
+        if name in hash_map:
+            hash_map[name] += 1
+        else:
+            hash_map[name] = 1
+
+    # 완주자 수 빼기
+    for name in completion:
+        hash_map[name] -= 1
+
+    # 값이 1 남은 사람이 완주 못한 사람
+    for name in hash_map:
+        if hash_map[name] > 0:
+            return name
