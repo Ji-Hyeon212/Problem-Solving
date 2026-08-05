@@ -7,12 +7,9 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        if n!=0:
-            del nums1[-n:];
-            nums1.extend(nums2);
-            nums1.sort();
-        else:
-            nums1;
-        
-        
+        if(n!=0):
+            del nums1[-n:]
+            nums1.extend(nums2)
+            nums1.sort()
+
         
