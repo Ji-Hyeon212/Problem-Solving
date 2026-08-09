@@ -5,16 +5,8 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        for i in range(len(nums)):
-            if nums[0] != val:
-                nums.append(nums[0])
-                del nums[0]
-            else:
-                del nums[0]
-        return len(nums)     
-                
-                
+        for i in range(len(nums) -1, -1, -1):
+            if nums[i] == val:
+                del nums[i]
 
-
-
-        
+        return len(nums)
