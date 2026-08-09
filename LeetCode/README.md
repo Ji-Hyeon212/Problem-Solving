@@ -5,12 +5,14 @@
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0027-remove-element](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0027-remove-element) | Easy |
 | [0055-jump-game](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0055-jump-game) | Medium |
 | [0088-merge-sorted-array](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0088-merge-sorted-array) | Easy |
 | [0274-h-index](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0274-h-index) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0027-remove-element](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0027-remove-element) | Easy |
 | [0088-merge-sorted-array](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0088-merge-sorted-array) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
