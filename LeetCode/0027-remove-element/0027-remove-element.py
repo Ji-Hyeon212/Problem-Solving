@@ -5,8 +5,12 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        for i in range(len(nums) -1, -1, -1):
-            if nums[i] == val:
-                del nums[i]
+        k = 0
+        for num in nums:
+            if num != val:
+                nums[k] = num
+                k+=1
+        return k
 
-        return len(nums)
+
+        
