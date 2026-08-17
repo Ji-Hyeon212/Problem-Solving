@@ -5,11 +5,10 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        s_ptr = t_ptr = 0
-        while s_ptr < len(s) and t_ptr < len(t):
-            if s[s_ptr] == t[t_ptr]:
-                s_ptr += 1
-            t_ptr += 1
-
-        return s_ptr == len(s)
+        i = 0
+        for char in t:
+            if i < len(s) and s[i] == char:
+                i+=1
+        
+        return i==len(s)
         
