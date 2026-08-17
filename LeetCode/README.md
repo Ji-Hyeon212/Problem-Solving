@@ -18,6 +18,7 @@
 | [0027-remove-element](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0027-remove-element) | Easy |
 | [0088-merge-sorted-array](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0088-merge-sorted-array) | Easy |
 | [0151-reverse-words-in-a-string](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0151-reverse-words-in-a-string) | Medium |
+| [0392-is-subsequence](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0392-is-subsequence) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -28,6 +29,7 @@
 | ------- | ------- |
 | [0045-jump-game-ii](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0045-jump-game-ii) | Medium |
 | [0055-jump-game](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0055-jump-game) | Medium |
+| [0392-is-subsequence](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0392-is-subsequence) | Easy |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -51,4 +53,5 @@
 | [0006-zigzag-conversion](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0006-zigzag-conversion) | Medium |
 | [0013-roman-to-integer](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0013-roman-to-integer) | Easy |
 | [0151-reverse-words-in-a-string](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0151-reverse-words-in-a-string) | Medium |
+| [0392-is-subsequence](https://github.com/Ji-Hyeon212/Problem-Solving/tree/main/LeetCode/0392-is-subsequence) | Easy |
 <!---LeetCode Topics End-->
