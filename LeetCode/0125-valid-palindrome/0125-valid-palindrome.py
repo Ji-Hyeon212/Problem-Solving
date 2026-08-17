@@ -9,5 +9,5 @@ class Solution(object):
         for char in s:
             if char.isalnum():
                 cleaned += char.lower()
-        return ''.join(reversed(cleaned)) == cleaned
+        return cleaned[::-1] == cleaned
         
