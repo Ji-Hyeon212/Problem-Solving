@@ -1,18 +1,15 @@
 def solution(participant, completion):
-    hash_map = {}
-
-    # 참가자 수 세기
-    for name in participant:
-        if name in hash_map:
-            hash_map[name] += 1
+    runners = {}
+    for part in participant:
+        if part in runners:
+            runners[part] += 1
         else:
-            hash_map[name] = 1
+            runners[part] = 1
+            
+    for complete in completion:
+        runners[complete] -= 1
 
-    # 완주자 수 빼기
-    for name in completion:
-        hash_map[name] -= 1
-
-    # 값이 1 남은 사람이 완주 못한 사람
-    for name in hash_map:
-        if hash_map[name] > 0:
-            return name
+    for runner in runners:
+        if runners[runner] != 0:
+            return runner
+    
