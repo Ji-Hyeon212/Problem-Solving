@@ -1,0 +1,17 @@
+-- 코드를 입력하세요
+SELECT
+    MONTH(C.START_DATE) AS MONTH,
+    C.CAR_ID, 
+    COUNT(*) AS RECORDS
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY C
+WHERE C.START_DATE >= '2022-8-01' 
+    AND C.START_DATE <= '2022-10-31'
+    AND (
+        SELECT COUNT(*)
+        FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY H
+        WHERE H.CAR_ID = C.CAR_ID -- 자동차 별로 기간에 해당하는 게 5회 이상인지 확인. 상관 서브쿼리. 반복문처럼 이해
+            AND H.START_DATE >= '2022-8-01' 
+            AND H.START_DATE <= '2022-10-31'
+    ) >= 5
+GROUP BY MONTH(C.START_DATE), C.CAR_ID
+ORDER BY MONTH ASC, C.CAR_ID DESC
